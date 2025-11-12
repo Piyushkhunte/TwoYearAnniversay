@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .heartbeat {
+            animation: heartbeat 2s ease-in-out infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-sky-50 via-rose-50 to-blue-50 flex items-center justify-center p-6">
+
+    <div class="max-w-5xl w-full fade-in">
+        <div class="bg-white/40 backdrop-blur-sm rounded-3xl p-12 md:p-20 shadow-2xl text-center">
+            <div class="mb-12">
+                <div class="text-6xl mb-8 heartbeat">⚓</div>
+                <h1 class="text-5xl md:text-7xl font-light text-slate-700 mb-12 leading-relaxed">
+                    Across <span class="text-rose-400">oceans and time</span>,<br>
+                    love always finds its way home.
+                </h1>
+            </div>
+
+            <div class="prose prose-xl md:prose-2xl max-w-none mb-12">
+                <p class="text-2xl md:text-4xl text-slate-600 font-light leading-relaxed mb-8">
+                    Nine months apart, miles of salt and sea between us—<br>
+                    yet your voice echoed louder than the waves.<br>
+                    Every sunrise on deck felt softer<br>
+                    knowing somewhere, you were watching the same sky.
+                </p>
+
+                <p class="text-2xl md:text-4xl text-slate-700 font-light leading-relaxed mb-8">
+                    You waited through storms I could never describe,<br>
+                    through silent nights and slow messages,<br>
+                    and still, you loved me like I never left.<br>
+                    <span class="text-rose-400 italic">That’s how I knew distance had no power over us.</span>
+                </p>
+
+                <p class="text-3xl md:text-5xl text-slate-700 font-normal leading-relaxed">
+                    We’ve learned that love isn’t measured in time or touch,<br>
+                    but in the unspoken promise —  
+                    <span class="text-rose-400">I’ll always come back to you.</span>
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <p class="text-2xl md:text-3xl text-slate-500 font-light italic">
+                    You are my harbor, my calm after every storm.
+                </p>
+                <p class="text-xl md:text-2xl text-slate-400 font-light mt-4">
+                    Happy 2 Years, my anchor ⚓
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="page11.html"
+   class="inline-block bg-rose-300 hover:bg-rose-400 text-slate-700 px-10 py-3 rounded-full text-xl font-light transition-all duration-300 transform hover:scale-105 shadow-lg">
+   Continue →
+</a>
+
+        </div>
+    </div>
+
+</body>
+</html>

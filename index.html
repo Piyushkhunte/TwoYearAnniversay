@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Two Years</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .subtitle-reveal {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.8s ease-in-out;
+        }
+        .subtitle-reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-amber-50 via-rose-50 to-blue-50 flex items-center justify-center p-6">
+
+    <div class="max-w-3xl w-full text-center fade-in">
+
+        <!-- ❤️ Your Image Added Here -->
+        <div class="mb-10 flex justify-center">
+    <img src="/images/both.png" 
+         alt="Us Together"
+         class="w-[320px] h-[320px] md:w-[420px] md:h-[420px] object-cover rounded-3xl shadow-2xl border-[6px] border-white/80">
+</div>
+
+
+        <div class="mb-12">
+            <h1 class="text-5xl md:text-7xl font-light text-slate-700 mb-8 leading-relaxed">
+                Two years, a whisper of stardust,<br>
+                <span class="text-rose-400">woven into forever</span>
+            </h1>
+
+            <p class="text-2xl md:text-3xl text-slate-600 font-light italic mb-12">
+                In every shared silence, in every gentle laugh,<br>
+                we found a universe only we could see.
+            </p>
+        </div>
+
+        <button
+            id="welcomeBtn"
+            class="bg-rose-300 hover:bg-rose-400 text-slate-700 px-12 py-4 rounded-full text-2xl font-light
+                   transition-all duration-300 transform hover:scale-105 shadow-lg mb-8">
+            Wanna know why I love you?
+        </button>
+
+        <p id="subtitle" class="text-xl md:text-2xl text-slate-600 font-light italic subtitle-reveal">
+            It's a story written in every shared breath.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
