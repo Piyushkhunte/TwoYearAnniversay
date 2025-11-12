@@ -18,8 +18,8 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from { opacity: 0; transform: translateY(20px); opacity: 0; }
+            to { opacity: 1; transform: translateY(0); opacity: 1; }
         }
 
         .memory-card {
@@ -28,6 +28,7 @@
 
         .memory-card:hover {
             transform: translateY(-5px);
+            background-color: rgba(255, 240, 245, 0.6);
         }
     </style>
 </head>
@@ -62,4 +63,29 @@
             <!-- Memory 2 -->
             <div class="memory-card bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg">
                 <blockquote class="text-2xl md:text-3xl text-slate-700 font-light leading-relaxed">
-                    <span class="text-rose-400 text-5xl">"</s
+                    <span class="text-rose-400 text-5xl">"</span>
+                    The first time we tried sushi,<br>
+                    fumbling with chopsticks, giggling at our mistakes—<br>
+                    <span class="italic text-slate-600">I realized then</span><br>
+                    that being silly with you feels like coming home.
+                    <span class="text-rose-400 text-5xl">"</span>
+                </blockquote>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+            <p class="text-xl text-slate-600 font-light italic mb-6">
+                But wait, there's more to remember...
+            </p>
+
+            <a href="page9.html"
+               class="inline-block bg-rose-300 hover:bg-rose-400 text-slate-700 px-10 py-3 rounded-full 
+                      text-xl font-light transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Tell me more
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
