@@ -12,17 +12,21 @@
         body {
             font-family: 'Cormorant Garamond', serif;
         }
+
         .fade-in {
             animation: fadeIn 1.5s ease-in;
         }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
         .cell {
             aspect-ratio: 1;
             transition: all 0.3s ease;
         }
+
         .cell:hover:not(.filled) {
             background-color: rgba(251, 207, 232, 0.3);
         }
@@ -33,11 +37,11 @@
 
     <div class="max-w-2xl w-full fade-in">
 
-        <!-- ❤️ IMAGE ADDED HERE -->
+        <!-- ❤️ Heart GIF (Fixed Path) -->
         <div class="flex justify-center mb-10">
             <img 
-                src="/images/heart-920.gif"
-                alt="Us Together"
+                src="images/heart-920.gif"
+                alt="Heart Animation"
                 class="w-[260px] h-[260px] md:w-[340px] md:h-[340px] object-cover
                        rounded-3xl shadow-xl border-[6px] border-white/70" 
             />
@@ -54,19 +58,30 @@
             </p>
 
             <div class="grid grid-cols-3 gap-3 md:gap-4 max-w-md mx-auto mb-8" id="board">
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="0"></div>
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="1"></div>
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="2"></div>
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="3"></div>
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="4"></div>
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="5"></div>
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="6"></div>
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="7"></div>
-                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="8"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="0"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="1"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="2"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="3"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="4"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="5"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="6"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="7"></div>
+                <div class="cell bg-white/80 rounded-xl flex items-center justify-center text-4xl md:text-6xl 
+                            font-light text-slate-700 cursor-pointer border-2 border-slate-200" data-index="8"></div>
             </div>
 
             <div class="text-center">
-                <button id="resetBtn" class="bg-slate-300 hover:bg-slate-400 text-slate-700 px-8 py-2 rounded-full text-lg font-light transition-all duration-300">
+                <button id="resetBtn" 
+                        class="bg-slate-300 hover:bg-slate-400 text-slate-700 px-8 py-2 rounded-full 
+                               text-lg font-light transition-all duration-300">
                     Play Again
                 </button>
             </div>
@@ -78,7 +93,8 @@
             </p>
 
             <a href="page8.html"
-               class="inline-block bg-rose-300 hover:bg-rose-400 text-slate-700 px-10 py-3 rounded-full text-xl font-light transition-all duration-300 transform hover:scale-105 shadow-lg">
+               class="inline-block bg-rose-300 hover:bg-rose-400 text-slate-700 px-10 py-3 rounded-full 
+                      text-xl font-light transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Continue
             </a>
         </div>

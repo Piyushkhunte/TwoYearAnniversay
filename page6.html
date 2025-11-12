@@ -12,16 +12,20 @@
         body {
             font-family: 'Cormorant Garamond', serif;
         }
+
         .fade-in {
             animation: fadeIn 1.5s ease-in;
         }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
         .quiz-option {
             transition: all 0.3s ease;
         }
+
         .quiz-option:hover {
             transform: translateX(10px);
         }
@@ -32,10 +36,10 @@
 
     <div class="max-w-3xl w-full fade-in">
 
-        <!-- 🥞 Pancake Image Added Here (Corrected from video tag) -->
+        <!-- 🥞 Pancake Memory Image -->
         <div class="flex justify-center mb-10">
             <img 
-                src="/images/pan-cake.jpg"
+                src="images/pan-cake.jpg"
                 alt="Pancake Memory"
                 class="w-[260px] h-[260px] md:w-[340px] md:h-[340px] object-cover 
                        rounded-3xl shadow-xl border-[6px] border-white/70"
@@ -75,6 +79,7 @@
 
     <script src="script.js"></script>
     <script>
+        // Load quiz question 4
         initQuiz(3, 'page5b.html');
     </script>
 

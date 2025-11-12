@@ -4,53 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Quiz - Question 6</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Cormorant Garamond', serif;
         }
+
         .fade-in {
             animation: fadeIn 1.5s ease-in;
         }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
         .quiz-option {
             transition: all 0.3s ease;
         }
+
         .quiz-option:hover {
             transform: translateX(10px);
         }
     </style>
 </head>
+
 <body class="min-h-screen bg-gradient-to-br from-amber-50 via-rose-50 to-blue-50 flex items-center justify-center p-6">
+
     <div class="max-w-3xl w-full fade-in">
+
+        <!-- 🌙 Romantic Final GIF Added -->
+        <div class="flex justify-center mb-10">
+            <img 
+                src="images/moonlight.gif" 
+                alt="Romantic Memory"
+                class="w-[260px] h-[260px] md:w-[340px] md:h-[340px] object-cover 
+                       rounded-3xl shadow-xl border-[6px] border-white/70"
+            />
+        </div>
+
         <div class="bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl">
+
             <div class="mb-8">
                 <p class="text-rose-400 text-xl font-light mb-2">Question 6 of 6</p>
+
                 <div class="w-full bg-slate-200 rounded-full h-2">
                     <div class="bg-rose-400 h-2 rounded-full" style="width: 100%"></div>
                 </div>
             </div>
 
-            <h2 class="text-3xl md:text-4xl font-light text-slate-700 mb-8 text-center" id="question">
-            </h2>
+            <h2 class="text-3xl md:text-4xl font-light text-slate-700 mb-8 text-center" id="question"></h2>
 
-            <div class="space-y-4 mb-8" id="options">
-            </div>
+            <div class="space-y-4 mb-8" id="options"></div>
 
-            <div id="feedback" class="text-center text-xl text-slate-600 font-light italic min-h-[3rem]">
-            </div>
+            <div id="feedback" class="text-center text-xl text-slate-600 font-light italic min-h-[3rem]"></div>
         </div>
 
         <div class="text-center mt-12" id="nextSection" style="display: none;">
             <p class="text-xl text-slate-600 font-light italic mb-6">
                 Time for a little playful challenge...
             </p>
+
             <a href="page7.html"
-               class="inline-block bg-rose-300 hover:bg-rose-400 text-slate-700 px-10 py-3 rounded-full text-xl font-light transition-all duration-300 transform hover:scale-105 shadow-lg">
+               class="inline-block bg-rose-300 hover:bg-rose-400 text-slate-700 px-10 py-3 rounded-full 
+                      text-xl font-light transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Let's play
             </a>
         </div>
@@ -58,7 +78,9 @@
 
     <script src="script.js"></script>
     <script>
+        // Initialize Question 6
         initQuiz(5, 'page7.html');
     </script>
+
 </body>
 </html>

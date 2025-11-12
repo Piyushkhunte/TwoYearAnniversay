@@ -22,7 +22,6 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
         .subtitle-reveal {
             opacity: 0;
             transform: translateY(10px);
@@ -39,13 +38,12 @@
 
     <div class="max-w-3xl w-full text-center fade-in">
 
-        <!-- ❤️ Your Image Added Here -->
+        <!-- ❤️ Image -->
         <div class="mb-10 flex justify-center">
-    <img src="/images/both.png" 
-         alt="Us Together"
-         class="w-[320px] h-[320px] md:w-[420px] md:h-[420px] object-cover rounded-3xl shadow-2xl border-[6px] border-white/80">
-</div>
-
+            <img src="images/both.png" 
+                 alt="Us Together"
+                 class="w-[320px] h-[320px] md:w-[420px] md:h-[420px] object-cover rounded-3xl shadow-2xl border-[6px] border-white/80">
+        </div>
 
         <div class="mb-12">
             <h1 class="text-5xl md:text-7xl font-light text-slate-700 mb-8 leading-relaxed">
@@ -59,14 +57,15 @@
             </p>
         </div>
 
-        <button
-            id="welcomeBtn"
-            class="bg-rose-300 hover:bg-rose-400 text-slate-700 px-12 py-4 rounded-full text-2xl font-light
-                   transition-all duration-300 transform hover:scale-105 shadow-lg mb-8">
-            Wanna know why I love you?
-        </button>
+        <a href="page2.html">
+            <button
+                class="bg-rose-300 hover:bg-rose-400 text-slate-700 px-12 py-4 rounded-full text-2xl font-light
+                       transition-all duration-300 transform hover:scale-105 shadow-lg mb-8">
+                Wanna know why I love you?
+            </button>
+        </a>
 
-        <p id="subtitle" class="text-xl md:text-2xl text-slate-600 font-light italic subtitle-reveal">
+        <p class="text-xl md:text-2xl text-slate-600 font-light italic">
             It's a story written in every shared breath.
         </p>
     </div>
